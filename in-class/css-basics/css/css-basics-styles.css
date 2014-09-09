@@ -1,0 +1,43 @@
+/*Eric Myer css reset*/
+/*@import "css-reset.css";*/
+
+/*normalize v3.0.1*/
+/*@import "normalize.css";*/
+
+/*CSS Reset*/
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+img{
+  border: 0px;
+}
+
+body{
+  background: #BADA55;
+  font-size: 1.6em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 3.3em;
+}
+
+.boxy{
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(0,0,0,1);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.eggs{
+  color: blue;
+}
