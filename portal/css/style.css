@@ -1,5 +1,14 @@
+body{
+  font-family: helvetica, sans-serif;
+  background: #eee;
+}
+
 h1, h2, h3, h4, h5, h6{
   margin: 0px;
+}
+
+ul{
+  margin-top: 10px;
 }
 
 .banner{
@@ -10,14 +19,12 @@ h1, h2, h3, h4, h5, h6{
   background-position: center top;
 }
 
-.first{
-  background: #2C3E50;
-  height: 500px;
-  color: #E74C3C;
+.main{
+  margin-top: 30px;
 }
 
-.second{
-  background: #646464;
-  color: #fff;
-  /*height: 500px/*/
+ul a, ul a:hover{
+  text-decoration:none;
+  color:inherit;
+  display:block;
 }
