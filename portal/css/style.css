@@ -1,0 +1,23 @@
+h1, h2, h3, h4, h5, h6{
+  margin: 0px;
+}
+
+.banner{
+  padding: 10px 0px;
+  color: #fff;
+  background-image: url(../img/Atlas.jpg);
+  background-size: 100%;
+  background-position: center top;
+}
+
+.first{
+  background: #2C3E50;
+  height: 500px;
+  color: #E74C3C;
+}
+
+.second{
+  background: #646464;
+  color: #fff;
+  /*height: 500px/*/
+}
