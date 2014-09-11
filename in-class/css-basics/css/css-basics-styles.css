@@ -10,25 +10,40 @@
 *:after{
   margin: 0;
   padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html{
+  /*Makes all font ems multiples of 10*/
   font-size: 62.5%;
 }
 
 img{
+  /*For IE*/
   border: 0px;
 }
 
 body{
   background: #BADA55;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   width: 80%;
   margin: 0 auto;
 }
 
+/*Global float classes*/
+.left{float: left;}
+.right{float right;}
+.clearfix:after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
 h1{
-  font-size: 3.3em;
+  font-size: 3.3rem;
+  line-height: 2;
 }
 
 .boxy{
@@ -36,8 +51,40 @@ h1{
   border: 1px solid rgba(0,0,0,1);
   margin-bottom: 10px;
   padding-bottom: 5px;
+  line-height: 1.5;
+}
+
+.boxy h2{
+  font-size: 1.6rem;
 }
 
 .eggs{
+  background: rgba(255,0,0,0.5);
+}
+
+/*direct child combinator*/
+.eggs > h2 {
   color: blue;
+}
+
+/*Adjacent combinator*/
+.bagels p + p{
+  font-style: italic;
+}
+
+.bagels{
+  width: 60%;
+}
+
+.pancakes{
+  width: 40%;
+}
+
+.toast ul li{
+  list-style-type: none;
+  padding: 10px;
+}
+
+.toast ul li:nth-child(odd){
+  background: white;
 }
