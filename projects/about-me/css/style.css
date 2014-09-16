@@ -1,34 +1,170 @@
+/*CSS Reset*/
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  /*Sets all font-sizes to 10px, so rems are multiples of 10*/
+  font-size: 62.5%;
+}
+
+/*end CSS Reset*/
+
 body{
-  font-family: helvetica, sans-serif;
-  background: #eee;
+  font-family: helvetica, arial, sans-serif;
+  background: #3E454C;
 }
 
-h1, h2, h3, h4, h5, h6{
+nav{margin-top: 2rem;}
 
+p{
+  font-size: 1.8rem;
+  color: #ddd;
 }
 
-.banner{
-  padding: 20px 0px;
+i{margin-right: 5px;}
 
-  color: #fff;
-  background-image: url(../img/Atlas.jpg);
-  background-size: 100%;
-  background-position: center top;
+figcaption{
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-.title{
+section{
+  margin-bottom: 3rem;
+}
+
+footer{
+  display: block;
+  height: 4rem;
+  background: #282D33;
+  color: #ccc;
+}
+
+footer p{
+  font-size: 1.2rem;
   margin-top: 20px;
 }
 
-.main{
-  margin-top: 50px;
+a.inline{
+  color: #C7C5A9;
 }
 
-.social{
-  padding-top: 20px;
+.bar{
+  background-color: #E74C3C;
+  height: 7px;
+  width: 100%;
 }
 
-.social a, .social a:hover{
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.banner{
+  width: 80%;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.banner h1{
+  margin: 1rem auto;
+  color: #8DABC0;
+  font-size: 3.3rem;
+}
+
+.banner li{
+  margin: 0 auto;
+  display: inline-block;
+  list-style-type: none;
+  font-size: 2.5rem;
+}
+
+.banner li a, .banner li a:hover{
   text-decoration: none;
-  color: inherit;
+  color: #E74C3C;
+}
+
+section h2{
+  font-size: 2.6rem;
+  color: #8DABC0;
+}
+
+.bio p{
+  /*padding-left: 1.5rem;*/
+  padding-top: .9rem;
+}
+
+.zoom-anim-dialog{
+  border-radius: .5rem;
+}
+
+/* Styles for dialog window */
+#small-dialog {
+	background: white;
+	padding: 20px 30px;
+	text-align: left;
+	max-width: 400px;
+	margin: 40px auto;
+	position: relative;
+}
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+	transform: translateY(0) perspective( 600px ) rotateX( 0 );
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0.01;
+
+	-webkit-transition: opacity 0.3s ease-out;
+	-moz-transition: opacity 0.3s ease-out;
+	-o-transition: opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
 }
