@@ -12,13 +12,16 @@
 html{
   /*Sets all font-sizes to 10px, so rems are multiples of 10*/
   font-size: 62.5%;
+  height: 100%;
 }
 
 /*end CSS Reset*/
 
 body{
+  height: 100%;
   font-family: helvetica, arial, sans-serif;
   background: #3E454C;
+  margin-bottom: -50px;
 }
 
 nav{margin-top: 2rem;}
@@ -40,15 +43,21 @@ section{
 }
 
 footer{
+  position: relative;
+  clear:both;
+  margin:0 auto;
   display: block;
-  height: 4rem;
   background: #282D33;
   color: #ccc;
+  padding:15px 15px
+}
+
+footer, .push{
+  height: 5rem;
 }
 
 footer p{
   font-size: 1.2rem;
-  margin-top: 20px;
 }
 
 a.inline{
@@ -63,7 +72,10 @@ a.inline{
 
 .container{
   width: 80%;
-  margin: 0 auto;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -5rem;
 }
 
 .banner{
