@@ -24,14 +24,30 @@ body{
   margin-bottom: -50px;
 }
 
+h2, h3, h4, h5, h6{
+  color: #8DABC0;
+}
+
+h2{
+  font-size: 2.6rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
 nav{margin-top: 2rem;}
+
+article{
+  margin-bottom: 2rem;
+}
 
 p{
   font-size: 1.8rem;
   color: #ddd;
 }
 
-i{margin-right: 5px;}
+i{margin-right: .5rem;}
 
 figcaption{
   font-size: 1.2rem;
@@ -49,7 +65,7 @@ footer{
   display: block;
   background: #282D33;
   color: #ccc;
-  padding:15px 15px
+  padding: 2rem 1.5rem;
 }
 
 footer, .push{
@@ -60,8 +76,18 @@ footer p{
   font-size: 1.2rem;
 }
 
+aside{
+  float: right;
+  display: block;
+}
+
 a.inline{
   color: #C7C5A9;
+}
+
+a.inline-sub{
+  color:#C7C5A9;
+  text-decoration: none;
 }
 
 .bar{
@@ -100,11 +126,6 @@ a.inline{
 .banner li a, .banner li a:hover{
   text-decoration: none;
   color: #E74C3C;
-}
-
-section h2{
-  font-size: 2.6rem;
-  color: #8DABC0;
 }
 
 .bio p{
