@@ -46,7 +46,7 @@ article{
 }
 
 p{
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #ddd;
   display: inline;
 }
@@ -118,6 +118,10 @@ a.inline-sub{
 h1.hey{
   font-size: 9.5rem;
   display: inline;
+}
+
+.name{
+  font-size: 2.3rem;
 }
 
 .bar{
