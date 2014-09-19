@@ -48,6 +48,7 @@ article{
 p{
   font-size: 1.8rem;
   color: #ddd;
+  display: inline;
 }
 
 i{margin-right: .5rem;}
@@ -71,8 +72,8 @@ footer{
   padding:0 1.5rem;
 }
 
-footer, .push{
-  height: 5rem;
+footer{
+  height: 7%;
 }
 
 footer p{
@@ -105,7 +106,6 @@ nav li:hover{
   transform: translateY(-3px);
 }
 
-
 a.inline{
   color: #C7C5A9;
 }
@@ -115,10 +115,17 @@ a.inline-sub{
   text-decoration: none;
 }
 
+h1.hey{
+  font-size: 9.5rem;
+  display: inline;
+}
+
 .bar{
   background-color: #E74C3C;
-  height: 7px;
+  height: 10px;
   width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .splash{
@@ -131,7 +138,7 @@ a.inline-sub{
 }
 
 .container{
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -147,7 +154,6 @@ a.inline-sub{
 }
 
 .bio p{
-  /*padding-left: 1.5rem;*/
   padding-top: .9rem;
 }
 
@@ -163,10 +169,14 @@ a.inline-sub{
 }
 
 .wrapper{
-  min-height: 100%;
+  min-height: 95.9%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -5rem;
+}
+
+.copy{
+  padding-top: 1.8rem;
 }
 
 .zoom-anim-dialog{
