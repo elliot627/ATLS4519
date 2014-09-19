@@ -157,8 +157,8 @@ h1.hey{
   font-size: 3.3rem;
 }
 
-.bio p{
-  padding-top: .9rem;
+.intro {
+  display: inline;
 }
 
 .photo{
