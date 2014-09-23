@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Animation</title>
+	<style type="text/css">					
+		/*DON'T FORGET TO ADD APPROPRIATE VENDOR PREFIXES!*/
+
+/*only one prefix*/
+		/*@-webkit-keyframes bgchange{*/
+			/*defining keyframes, browser interprets the rest*/
+/*			from{background: black;}
+			to:{background: white;}
+		}*/
+
+/*using multiple prefixes*/
+			@-webkit-keyframes bgchange{
+				0%{background: red;}
+				25%{background: orange;}
+				50%{background: yellow;}
+				75%{background: green;}
+				100%{background: blue;}
+			}
+
+/*		.bgchanging{
+			-webkit-animation-name: bgchange;
+			-webkit-animation-duration: 5s;
+			-webkit-animation-timing-function: ease-in-out;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-delay: 1s;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-fill-mode: backwards;
+		}*/
+
+		/*animation shothand: -webkit-animation: name duration timing-function delay iteration-count direction fill-mode*/
+
+		.bgchanging{
+			-webkit-animation: bgchange 2s ease-in-out 1s infinite alternate both;
+		}
+
+	</style>
+</head>
+<body class="bgchanging">
+
+</body>
+</html>
