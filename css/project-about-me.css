@@ -33,6 +33,7 @@ body{
   height: 100%;
   font-family: allerregular, helvetica, arial, sans-serif;
   background: #3E454C;
+  margin-bottom: -5rem;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -78,13 +79,14 @@ summary:focus, summary:hover{
   cursor: pointer;
 }
 
+details{
+  display: inline;
+  margin: 5rem auto;
+}
+
 summary{
   color: #fff;
   font-size: 2rem;
-}
-
-.detail-content{
-  padding-left: 2rem;
 }
 
 p{
@@ -112,7 +114,7 @@ footer{
   background: #282D33;
   color: #ccc;
   padding:0 1.5rem;
-  height: 5.7%;
+  height: 8%;
 }
 
 aside{
@@ -189,6 +191,8 @@ address a{
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  -webkit-box-shadow: 0 2px 4px 3px ##444;
+  box-shadow: 0 2px 4px 3px ##444;
 }
 
 .splash{
@@ -210,7 +214,8 @@ address a{
 .container{
   width: 90%;
   max-width: 90rem;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
+
 }
 
 .photo{
@@ -220,8 +225,8 @@ address a{
   width:100%;
 }
 
-.WTF{
-  font-size:;
+.activites{
+  margin-top: 4.5rem;
 }
 
 .wrapper{
@@ -231,13 +236,17 @@ address a{
   margin: 0 auto -5rem;
 }
 
-.2-col{
+.twocol{
   -moz-column-count: 2;
   -moz-column-gap: undefinedpx;
   -webkit-column-count: 2;
   -webkit-column-gap: undefinedpx;
   column-count: 2;
   column-gap: undefinedpx;
+}
+
+.detail-content{
+  padding-left: 2rem;
 }
 
 .copy{
