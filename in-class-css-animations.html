@@ -12,14 +12,13 @@
 			to:{background: white;}
 		}*/
 
-/*using multiple prefixes*/
-			@-webkit-keyframes bgchange{
-				0%{background: red;}
-				25%{background: orange;}
-				50%{background: yellow;}
-				75%{background: green;}
-				100%{background: blue;}
-			}
+		@-webkit-keyframes bgchange{
+			0%{background: red;}
+			25%{background: orange;}
+			50%{background: yellow;}
+			75%{background: green;}
+			100%{background: blue;}
+		}
 
 /*		.bgchanging{
 			-webkit-animation-name: bgchange;
@@ -31,8 +30,7 @@
 			-webkit-animation-fill-mode: backwards;
 		}*/
 
-		/*animation shothand: -webkit-animation: name duration timing-function delay iteration-count direction fill-mode*/
-
+/*animation shothand: -webkit-animation: name duration timing-function delay iteration-count direction fill-mode*/
 		.bgchanging{
 			-webkit-animation: bgchange 2s ease-in-out 1s infinite alternate both;
 		}
