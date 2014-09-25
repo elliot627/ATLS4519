@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>CSS Animation</title>
 	<style type="text/css">					
 		/*DON'T FORGET TO ADD APPROPRIATE VENDOR PREFIXES!*/
@@ -13,6 +14,14 @@
 		}*/
 
 		@-webkit-keyframes bgchange{
+			0%{background: red;}
+			25%{background: orange;}
+			50%{background: yellow;}
+			75%{background: green;}
+			100%{background: blue;}
+		}
+
+		keyframes bgchange{
 			0%{background: red;}
 			25%{background: orange;}
 			50%{background: yellow;}
@@ -34,10 +43,133 @@
 		.bgchanging{
 			-webkit-animation: bgchange 2s ease-in-out 1s infinite alternate both;
 		}
+		.bgchanging{
+			-moz-animation: bgchange 2s ease-in-out 1s infinite alternate both;
+		}
+		.bgchanging{
+			-o-animation: bgchange 2s ease-in-out 1s infinite alternate both;
+		}
+		.bgchanging{
+			animation: bgchange 2s ease-in-out 1s infinite alternate both;
+		}
+
+		.boxy {
+			background: linear-gradient(black, white);
+			border: solid 2px black;
+			height: 150px;
+			width: 150px;
+			border-radius: 25px;
+			display: table;
+			margin-bottom:20px;
+		}
+
+		.boxy h1{
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		@-webkit-keyframes moveit{											/*Create the css animation*/
+			from {-webkit-transform: translateX(0px);}
+			to {-webkit-transform: translateX(500px);}					
+		}
+
+		.moveitbub{
+			-webkit-animation: moveit 5s cubic-bezier(0.680, -0.550, 0.265,1.550) infinite alternate;
+		}
+
+		@-webkit-keyframes frodo{
+			0% {-webkit-transform: translateX(0px) rotate(0deg);}
+			50% {-webkit-transform: translateX(500px) rotate(60deg);}
+			100% {-webkit-transform: translateX(500px) rotate(0deg);}
+		}
+
+		.spinandgo{-webkit-animation: frodo 2s cubic-bezier(0.680, -0.550, 0.265, 1.550) 2s 2;}
+
+		@-webkit-keyframes buttonglow{
+			0% {background: blue;}
+			15% {background: yellow;}
+			30% {background: red;}
+			45% {background: orange;}
+			60% {background: green;}
+			75% {background: black;}
+			100% {background: teal;}
+		}
+
+		.buttonchange{
+			-webkit-animation: buttonglow 4s ease-in-out infinite alternate;
+			-webkit-animation-play-state: paused;
+		}
+
+		.buttonchange:hover{
+			-webkit-animation-play-state: running;
+			cursor: pointer;
+		}
+
+		.wrapper3d{
+			-webkit-perspective: 1000px;
+		}
+
+		@-webkit-keyframes hinge{
+			from {-webkit-transform: rotateY(0deg);}
+			to {-webkit-transform: rotateY(90deg);}
+		}
+
+		.door{
+			-webkit-animation: hinge 2s ease-in-out infinite alternate;
+		}
+
+		.door:nth-of-type(2n+1){-webkit-animation-delay: 1s;}
+		.door:nth-of-type(3n+1){-webkit-animation-delay: 2s;}
+
+		@-webkit-keyframes rolly{
+			from {-webkit-transform: translateX(0px);}
+			to {-webkit-transform: translateX(600px);}
+		}
+
+		@-webkit-keyframes polly{
+			from {-webkit-transform: translateY(0px);}
+			to {-webkit-transform: translateY(600px);}
+		}
+
+		.rollypolly{
+			-webkit-animation-name: rolly, polly;
+			-webkit-animation-duration: .7s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: alternate;
+		}
 
 	</style>
 </head>
 <body class="bgchanging">
+
+	<div class="boxy moveitbub">
+		<h1>Move Itttt</h1>
+	</div>
+
+	<div class="boxy spinandgo">
+		<h1>Frodo</h1>
+	</div>
+
+	<div class="boxy buttonchange">
+		<h1>Button</h1>
+	</div>	
+
+	<div class="wrapper3d">
+		<div class="boxy door">
+			<h1>Door 1</h1>
+		</div>
+		<div class="boxy door">
+			<h1>Door 2</h1>
+		</div>
+		<div class="boxy door">
+			<h1>Door 3</h1>
+		</div>
+	</div>
+
+	<div class="boxy rollypolly">
+		<h1>Roly Poly</h1>
+	</div>
 
 </body>
 </html>
