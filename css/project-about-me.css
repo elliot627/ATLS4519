@@ -218,13 +218,6 @@ address a{
 
 }
 
-.photo{
-  background: url("../img/Atlas.jpg");
-  background-position: center center;
-  height:250px;
-  width:100%;
-}
-
 .activites{
   margin-top: 4.5rem;
 }
