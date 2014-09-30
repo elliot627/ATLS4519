@@ -9,11 +9,33 @@
 			background: #343434;
 			color: #eee;
 		}
+
+		.text-replacement{
+			position: absolute;
+			top: -9999em;
+			left: 9999em;
+		}
+
+		.socail li a[href*="http://twitter.com"]::before{
+			content: "\f099";
+		}
 	</style>
 </head>
 <body>
 	<header>
 		<h1><i class="fa fa-4x fa-ra"></i> Join the Rebel Alliance!</h1>
 	</header>
+
+	<section>
+		<!-- hidden span for screen readers -->
+		<i class="fa fa-shopping-cart fa-5x cart"><span class="text-replacement">Buy a lightsaber</span></i>
+	</section>
+
+	<section>
+		<ul class="fa socail">
+			<li><a href="https://twitter.com/elliot627"><i class="fa fa-twitter"><span class="text-replacement">Twitter</span></i></a></li>
+		</ul>
+	</section>
+
 </body>
 </html>
