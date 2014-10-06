@@ -1,0 +1,17 @@
+/*CSS Reset*/
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  /*Makes all font ems multiples of 10*/
+  font-size: 62.5%;
+}
+
+/*end CSS Reset*/
