@@ -1,1 +1,69 @@
 @import "in-class-css-reset.css";
+
+body{
+	color: #fff;
+}
+
+h1{font-size: 8rem;}
+
+section{
+	width: 100%;
+	height: 100vh;
+	padding-top: 38vh;
+	text-align: center;
+}
+
+.poem{
+	font-family: cursive;
+}
+
+.title-section{
+	background: #DC3522;
+}
+
+.wall-section{
+	background: #D9CB9E;
+}
+
+.title-repeat-section{
+	background: #374140;
+}
+
+.fall-section{
+	background: #2A2C2B;
+}
+
+.kings-section{
+	background: #1E1E20;
+}
+
+
+/*CSS3 Transitions! -- Don't forget alternative prefixes!*/
+@-webkit-keyframes fadeIn{
+	from{opacity: 0; font-size:3rem;}
+	to{opacity: 1; font-size:8rem;}
+}
+
+.fadeOnIn{
+	-webkit-animation: fadeIn 1.5s ease-in;
+}
+
+@-webkit-keyframes sitDown{
+	from{-webkit-transform: translateY(300px);}
+	to{-webkit-transform: translateY(0px);}
+}
+
+.sitOnDown{
+	-webkit-animation: sitDown .7s cubic-bezier(1,1.68,.81,.77);
+}
+
+@-webkit-keyframes slideIn{
+	0%{-webkit-transform:translateX(-1000px) skew(-20deg);}
+	100%{-webkit-transform:translateX(0) skew(0deg);}
+}
+
+.slideOnIn{
+	-webkit-animation: slideIn .8s ease-out;
+}
+
+
