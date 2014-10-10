@@ -1,4 +1,4 @@
 wow = new WOW({
-	offset: 200
+	offset: 300
 });
 wow.init();

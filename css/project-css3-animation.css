@@ -5,6 +5,7 @@ body{
 }
 
 h1{font-size: 8rem;}
+h3{font-}
 
 section{
 	width: 100%;
@@ -27,14 +28,43 @@ section{
 
 .title-repeat-section{
 	background: #374140;
+	color:#DC3522;
 }
 
 .fall-section{
 	background: #2A2C2B;
 }
 
-.kings-section{
+.horses-section{
 	background: #1E1E20;
+	color: #D9CB9E;
+}
+
+.men-section{
+	background: #2A2C2B;
+}
+
+.together-section{
+	padding-top: 10vh;
+	background: #374140;
+	color: #DC3522;
+}
+
+.split{
+	cursor: pointer;
+	display: inline;
+}
+
+.hum{
+	margin-right: 5rem;
+}
+
+.pty{
+	margin-left: 5rem;
+}
+
+.end{
+	margin-top: 10rem;
 }
 
 
@@ -57,13 +87,84 @@ section{
 	-webkit-animation: sitDown .7s cubic-bezier(1,1.68,.81,.77);
 }
 
-@-webkit-keyframes slideIn{
+@-webkit-keyframes slideRight{
 	0%{-webkit-transform:translateX(-1000px) skew(-20deg);}
-	100%{-webkit-transform:translateX(0) skew(0deg);}
+	100%{-webkit-transform:translateX(0) skew(20deg);}
 }
 
-.slideOnIn{
-	-webkit-animation: slideIn .8s ease-out;
+.slideInRight{
+	-webkit-animation: slideRight .8s ease-out;
 }
 
+@-webkit-keyframes dropIt{
+	0%{-webkit-transform: translateY(0px) rotate(0deg);}
+	100%{-webkit-transform: translateY(3000px) rotate(2080deg);}
+}
 
+.dropItLow{
+	/*-webkit-animation: dropIt 2s ease-in 0 normal 1 forwards;*/
+	-webkit-animation-name: dropIt;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: none;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes gallop{
+	0%{-webkit-transfrom: translateY(0);}
+	25%{-webkit-transform: translateY(-20px);}
+	50%{-webkit-transform: translateY(0px);}
+	75%{-webkit-transform: translateY(-20px);}
+	100%{-webkit-transfrom: translateY(0px);}
+
+}
+
+.gallopOn{
+	-webkit-animation-name: gallop;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: .5s;
+}
+
+@-webkit-keyframes slideLeft{
+	0%{-webkit-transform: translateX(1000px);}
+	100%{-webkit-transform: translateX(0px);}
+}
+
+.slideInLeft{
+	-webkit-animation: slideLeft .8s ease-out;
+}
+
+@-webkit-keyframes squishRight{
+	0%{-webkit-transform: translateX(0rem);}
+	80%{-webkit-transform: translateX(5rem);}
+	90%{-webkit-transform: translateX(-.5rem);}
+	100%{-webkit-transform: translateX(0rem);}
+}
+
+.squishItRight{
+	/*-webkit-animation: squishRight .5s ease-in;*/
+	-webkit-animation-name: squishRight;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes squishLeft{
+	0%{-webkit-transform: translateX(0rem);}
+	80%{-webkit-transform: translateX(-5rem);}
+	90%{-webkit-transform: translateX(.5rem);}
+	100%{-webkit-transform: translateX(0rem);}
+}
+
+.squishItLeft{
+	/*-webkit-animation: squishRight .5s ease-in;*/
+	-webkit-animation-name: squishLeft;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+}
