@@ -122,13 +122,13 @@ section{
 }
 
 .dropItLow{
-	/*-webkit-animation: dropIt 2s ease-in 0 normal 1 forwards;*/
-	-webkit-animation-name: dropIt;
-	-webkit-animation-duration: 4s;
+	-webkit-animation: dropIt 3.5s ease-in normal forwards;
+/*	-webkit-animation-name: dropIt;
+	-webkit-animation-duration: 3.5s;
+	-webkit-animation-timing-function: ease-in;
 	-webkit-animation-direction: normal;
-	-webkit-animation-fill-mode: none;
 	-webkit-animation-iteration-count: 1;
-	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;*/
 }
 
 @-webkit-keyframes gallop{
