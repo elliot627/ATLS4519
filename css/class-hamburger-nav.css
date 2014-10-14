@@ -1,0 +1,67 @@
+@import "css-reset.css";
+
+body{
+	background: #333;
+	color: white;
+}
+
+h1{
+	font-size: 3.5rem;
+	margin: 20px 0;
+}
+
+ul li{
+	float: left;
+	margin-right: 20px;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+	font-size: 1.6rem;
+	padding: 5px 10px;
+	border: solid 1px rgba(0,0,0,.9);
+}
+
+nav a:link, nav a:visited{
+	color: white;
+}
+
+nav a:hover{
+	background: rgba(255,255,255,.8);
+	color: black;
+}
+
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*===Mobile Styles===*/
+@media only screen and (max-width: 480px){
+	nav{
+		text-align: center;
+		line-height: 4rem;
+	}
+
+	nav ul li{
+		width: 100%;
+		height: 50px;
+		clear: both;
+	}
+
+
+	/*Makes anchor fill li*/
+	nav a{
+		display: block;
+		height: 100%;
+		border: 0;
+		border-bottom: solid 1px white;
+	}
+
+	li:first-child{
+		border-top: solid 1px;
+	}
+}
+
+/*===End Mobile Styles===*/
