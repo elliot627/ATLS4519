@@ -11,6 +11,12 @@ ul{
   margin-top: 10px;
 }
 
+li{
+  padding: 0 !important;
+  height: 4rem;
+  line-height: 4rem;
+}
+
 .banner{
   padding: 10px 0px;
   color: #fff;
@@ -24,7 +30,12 @@ ul{
 }
 
 ul a, ul a:hover{
+  display: block;
+  height: 100%;
   text-decoration:none;
   color:inherit;
-  display:block;
+}
+
+li:hover{
+  background: #eee;
 }
