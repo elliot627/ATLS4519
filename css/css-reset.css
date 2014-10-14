@@ -19,7 +19,7 @@ ul li {list-style-type: none;}
 
 .left{float:left;}
 .right{float:right;}
-.clearfix{
+.clearfix:after{
 	display: table;
 	content: " ";
 	clear: both;
