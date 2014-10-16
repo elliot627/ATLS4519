@@ -15,6 +15,9 @@ ul li{
 	margin-right: 20px;
 }
 
+nav{
+}
+
 nav a{
 	color: white;
 	text-decoration: none;
@@ -32,9 +35,26 @@ nav a:hover{
 	color: black;
 }
 
+p{
+	font-size: 2rem;
+}
+
 .container{
 	max-width: 960px;
 	margin: 0 auto;
+}
+
+.navicon{
+	font-size: 2rem;
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.navicon a:hover, .navicon a:visited, .navicon a:focus, .navicon a:active{
+	color: #fff;
+	text-decoration: none;
 }
 
 /*===Mobile Styles===*/
@@ -42,6 +62,7 @@ nav a:hover{
 	nav{
 		text-align: center;
 		line-height: 4rem;
+		display: none;
 	}
 
 	nav ul li{
@@ -49,7 +70,6 @@ nav a:hover{
 		height: 50px;
 		clear: both;
 	}
-
 
 	/*Makes anchor fill li*/
 	nav a{
@@ -62,6 +82,17 @@ nav a:hover{
 	li:first-child{
 		border-top: solid 1px;
 	}
-}
 
+	.navicon{
+		display: block;
+	}
+}
 /*===End Mobile Styles===*/
+
+
+/*===Desktop Style Reset===*/
+/*===This forces the nav to toggle on when viewed in desktop===*/
+@media only screen and (min-width: 481px){
+	nav{display: block !important;}
+}
+/*===End Desktop Style Reset===*/
