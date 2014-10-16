@@ -29,11 +29,12 @@ li{
   margin-top: 30px;
 }
 
-ul a, ul a:hover{
+ul a, ul a:hover, ul a:focus, ul a:active{
   display: block;
   height: 100%;
   text-decoration:none;
   color:inherit;
+  border: none !important;
 }
 
 li:hover{
