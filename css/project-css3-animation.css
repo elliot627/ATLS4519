@@ -210,23 +210,23 @@ section{
 
 /*=====Fall Down Animation=====*/
 @-webkit-keyframes dropIt{
-	0%{-webkit-transform: translateY(0px) rotate(0deg);}
-	100%{-webkit-transform: translateY(3000px) rotate(2080deg);}
+	from{-webkit-transform: translateY(0px) rotate(0deg);}
+	to{-webkit-transform: translateY(3000px) rotate(2080deg);}
 }
 
 @-moz-keyframes dropIt{
-	0%{-moz-transform: translateY(0px) rotate(0deg);}
-	100%{-moz-transform: translateY(3000px) rotate(2080deg);}
+	from{-moz-transform: translateY(0px) rotate(0deg);}
+	to{-moz-transform: translateY(3000px) rotate(2080deg);}
 }
 
 @-o-keyframes dropIt{
-	0%{-o-transform: translateY(0px) rotate(0deg);}
-	100%{-o-transform: translateY(3000px) rotate(2080deg);}
+	from{-o-transform: translateY(0px) rotate(0deg);}
+	to{-o-transform: translateY(3000px) rotate(2080deg);}
 }
 
 @keyframes dropIt{
-	0%{transform: translateY(0px) rotate(0deg);}
-	100%{transform: translateY(3000px) rotate(2080deg);}
+	from{transform: translateY(0px) rotate(0deg);}
+	to{transform: translateY(3000px) rotate(2080deg);}
 }
 
 .dropItLow{
@@ -242,7 +242,7 @@ section{
 
 /*=====Gallop Animation=====*/
 @-webkit-keyframes gallop{
-	0%{-webkit-transfrom: translateY(0);}
+	0%{-webkit-transfrom: translateY(0px);}
 	15%{-webkit-transform: translateY(-20px);}
 	30%{-webkit-transform: translateY(0px);}
 	45%{-webkit-transform: translateY(-20px);}
@@ -251,7 +251,7 @@ section{
 }
 
 @-moz-keyframes gallop{
-	0%{-moz-transfrom: translateY(0);}
+	0%{-moz-transfrom: translateY(0px);}
 	15%{-moz-transform: translateY(-20px);}
 	30%{-moz-transform: translateY(0px);}
 	45%{-moz-transform: translateY(-20px);}
@@ -260,7 +260,7 @@ section{
 }
 
 @-o-keyframes gallop{
-	0%{-o-transfrom: translateY(0);}
+	0%{-o-transfrom: translateY(0px);}
 	15%{-o-transform: translateY(-20px);}
 	30%{-o-transform: translateY(0px);}
 	45%{-o-transform: translateY(-20px);}
@@ -269,7 +269,7 @@ section{
 }
 
 @keyframes gallop{
-	0%{transfrom: translateY(0);}
+	0%{transfrom: translateY(0px);}
 	15%{transform: translateY(-20px);}
 	30%{transform: translateY(0px);}
 	45%{transform: translateY(-20px);}
