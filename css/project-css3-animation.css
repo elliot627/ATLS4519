@@ -77,85 +77,269 @@ section{
 }
 
 
-/*CSS3 Transitions! -- Don't forget alternative prefixes!*/
+
+
+
+/*=====Fade In Animation=====*/
 @-webkit-keyframes fadeIn{
+	from{opacity: 0; font-size: 3rem;}
+	to{opacity: 1; font-size: 8rem;}
+}
+
+@-moz-keyframes fadeIn{
+	from{opacity: 0; font-size: 3rem;}
+	to{opacity: 1; font-size: 8rem;}
+}
+
+@-o-keyframes fadeIn{
+	from{opacity: 0; font-size: 3rem;}
+	to{opacity: 1; font-size: 8rem;}
+}
+
+@keyframes fadeIn{
 	from{opacity: 0; font-size: 3rem;}
 	to{opacity: 1; font-size: 8rem;}
 }
 
 .fadeOnIn{
 	-webkit-animation: fadeIn 1s ease-in;
+	-moz-animation: fadeIn 1s ease-in;
+	-o-animation: fadeIn 1s ease-in;
+	animation: fadeIn 1s ease-in;
 }
 
+
+
+
+
+/*=====Smaller Fade In Animation=====*/
 @-webkit-keyframes fadeInSmall{
 	from{opacity: 0; font-size: 1rem;}
 	to{opacity: 1; font-size: 8rem;}
 }
 
-.fadeOnInSmall{
-
-	-webkit-animation: fadeInSmall 1s ease-in normal forwards;
+@-moz-keyframes fadeInSmall{
+	from{opacity: 0; font-size: 1rem;}
+	to{opacity: 1; font-size: 8rem;}
 }
 
+@-o-keyframes fadeInSmall{
+	from{opacity: 0; font-size: 1rem;}
+	to{opacity: 1; font-size: 8rem;}
+}
+
+@keyframes fadeInSmall{
+	from{opacity: 0; font-size: 1rem;}
+	to{opacity: 1; font-size: 8rem;}
+}
+
+.fadeOnInSmall{
+	-webkit-animation: fadeInSmall 1s ease-in normal forwards;
+	-moz-animation: fadeInSmall 1s ease-in normal forwards;
+	-o-animation: fadeInSmall 1s ease-in normal forwards;
+	animation: fadeInSmall 1s ease-in normal forwards;
+}
+
+
+
+
+
+/*====='Sit Down' Animation=====*/
 @-webkit-keyframes sitDown{
 	from{-webkit-transform: translateY(300px);}
 	to{-webkit-transform: translateY(0px);}
 }
 
-.sitOnDown{
-	-webkit-animation: sitDown .7s cubic-bezier(1,1.68,.81,.77);
+@-moz-keyframes sitDown{
+	from{-moz-transform: translateY(300px);}
+	to{-moz-transform: translateY(0px);}
 }
 
+@-o-keyframes sitDown{
+	from{-o-transform: translateY(300px);}
+	to{-o-transform: translateY(0px);}
+}
+
+@keyframes sitDown{
+	from{transform: translateY(300px);}
+	to{transform: translateY(0px);}
+}
+
+.sitOnDown{
+	-webkit-animation: sitDown .7s cubic-bezier(1,1.68,.81,.77);
+	-moz-animation: sitDown .7s cubic-bezier(1,1.68,.81,.77);
+	-o-animation: sitDown .7s cubic-bezier(1,1.68,.81,.77);
+	animation: sitDown .7s cubic-bezier(1,1.68,.81,.77);
+}
+
+
+
+
+
+/*=====Slide Right Animation=====*/
 @-webkit-keyframes slideRight{
 	0%{-webkit-transform:translateX(-1000px);}
 	100%{-webkit-transform:translateX(0);}
 }
 
-.slideInRight{
-	-webkit-animation: slideRight .8s ease-out;
+@-moz-keyframes slideRight{
+	0%{-moz-transform:translateX(-1000px);}
+	100%{-moz-transform:translateX(0);}
 }
 
+@-o-keyframes slideRight{
+	0%{-o-transform:translateX(-1000px);}
+	100%{-o-transform:translateX(0);}
+}
+
+@keyframes slideRight{
+	0%{transform:translateX(-1000px);}
+	100%{transform:translateX(0);}
+}
+
+.slideInRight{
+	-webkit-animation: slideRight .8s ease-out;
+	-moz-animation: slideRight .8s ease-out;
+	-o-animation: slideRight .8s ease-out;
+	animation: slideRight .8s ease-out;
+}
+
+
+
+
+
+/*=====Fall Down Animation=====*/
 @-webkit-keyframes dropIt{
 	0%{-webkit-transform: translateY(0px) rotate(0deg);}
 	100%{-webkit-transform: translateY(3000px) rotate(2080deg);}
 }
 
-.dropItLow{
-	-webkit-animation: dropIt 3.5s ease-in normal forwards;
-/*	-webkit-animation-name: dropIt;
-	-webkit-animation-duration: 3.5s;
-	-webkit-animation-timing-function: ease-in;
-	-webkit-animation-direction: normal;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-fill-mode: forwards;*/
+@-moz-keyframes dropIt{
+	0%{-moz-transform: translateY(0px) rotate(0deg);}
+	100%{-moz-transform: translateY(3000px) rotate(2080deg);}
 }
 
+@-o-keyframes dropIt{
+	0%{-o-transform: translateY(0px) rotate(0deg);}
+	100%{-o-transform: translateY(3000px) rotate(2080deg);}
+}
+
+@keyframes dropIt{
+	0%{transform: translateY(0px) rotate(0deg);}
+	100%{transform: translateY(3000px) rotate(2080deg);}
+}
+
+.dropItLow{
+	-webkit-animation: dropIt 3.5s ease-in normal forwards;
+	-moz-animation: dropIt 3.5s ease-in normal forwards;
+	-o-animation: dropIt 3.5s ease-in normal forwards;
+	animation: dropIt 3.5s ease-in normal forwards;
+}
+
+
+
+
+
+/*=====Gallop Animation=====*/
 @-webkit-keyframes gallop{
 	0%{-webkit-transfrom: translateY(0);}
-	25%{-webkit-transform: translateY(-20px);}
-	50%{-webkit-transform: translateY(0px);}
-	75%{-webkit-transform: translateY(-20px);}
-	100%{-webkit-transfrom: translateY(0px);}
+	15%{-webkit-transform: translateY(-20px);}
+	30%{-webkit-transform: translateY(0px);}
+	45%{-webkit-transform: translateY(-20px);}
+	50%{-webkit-transfrom: translateY(0px);}
+	100%{-webkit-transform: translateY(0px);}
+}
 
+@-moz-keyframes gallop{
+	0%{-moz-transfrom: translateY(0);}
+	15%{-moz-transform: translateY(-20px);}
+	30%{-moz-transform: translateY(0px);}
+	45%{-moz-transform: translateY(-20px);}
+	50%{-moz-transfrom: translateY(0px);}
+	100%{-moz-transform: translateY(0px);}
+}
+
+@-o-keyframes gallop{
+	0%{-o-transfrom: translateY(0);}
+	15%{-o-transform: translateY(-20px);}
+	30%{-o-transform: translateY(0px);}
+	45%{-o-transform: translateY(-20px);}
+	50%{-o-transfrom: translateY(0px);}
+	100%{-o-transform: translateY(0px);}
+}
+
+@keyframes gallop{
+	0%{transfrom: translateY(0);}
+	15%{transform: translateY(-20px);}
+	30%{transform: translateY(0px);}
+	45%{transform: translateY(-20px);}
+	50%{transfrom: translateY(0px);}
+	100%{transform: translateY(0px);}
 }
 
 .gallopOn{
 	-webkit-animation-name: gallop;
-	-webkit-animation-duration: .5s;
+	-webkit-animation-duration:.7s;
 	-webkit-animation-direction: normal;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-delay: .5s;
+
+	-moz-animation-name: gallop;
+	-moz-animation-duration:.7s;
+	-moz-animation-direction: normal;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-delay: .5s;
+
+	-o-animation-name: gallop;
+	-o-animation-duration:.7s;
+	-o-animation-direction: normal;
+	-o-animation-iteration-count: infinite;
+	-o-animation-delay: .5s;
+
+	animation-name: gallop;
+	animation-duration:.7s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-delay: .5s;
 }
 
+
+
+
+
+/*======Slide Left Animation=====*/
 @-webkit-keyframes slideLeft{
 	0%{-webkit-transform: translateX(1000px);}
 	100%{-webkit-transform: translateX(0px);}
 }
 
-.slideInLeft{
-	-webkit-animation: slideLeft .8s ease-out;
+@-moz-keyframes slideLeft{
+	0%{-moz-transform: translateX(1000px);}
+	100%{-moz-transform: translateX(0px);}
 }
 
+@-o-keyframes slideLeft{
+	0%{-o-transform: translateX(1000px);}
+	100%{-o-transform: translateX(0px);}
+}
+
+@keyframes slideLeft{
+	0%{transform: translateX(1000px);}
+	100%{transform: translateX(0px);}
+}
+
+.slideInLeft{
+	-webkit-animation: slideLeft .8s ease-out;
+	-moz-animation: slideLeft .8s ease-out;
+	-o-animation: slideLeft .8s ease-out;
+	animation: slideLeft .8s ease-out;
+}
+
+
+
+
+
+/*=====Squish Right Animation=====*/
 @-webkit-keyframes squishRight{
 	0%{-webkit-transform: translateX(0rem);}
 	80%{-webkit-transform: translateX(5rem);}
@@ -163,15 +347,58 @@ section{
 	100%{-webkit-transform: translateX(0rem);}
 }
 
+@-moz-keyframes squishRight{
+	0%{-moz-transform: translateX(0rem);}
+	80%{-moz-transform: translateX(5rem);}
+	90%{-moz-transform: translateX(-.5rem);}
+	100%{-moz-transform: translateX(0rem);}
+}
+
+@-o-keyframes squishRight{
+	0%{-o-transform: translateX(0rem);}
+	80%{-o-transform: translateX(5rem);}
+	90%{-o-transform: translateX(-.5rem);}
+	100%{-o-transform: translateX(0rem);}
+}
+
+@keyframes squishRight{
+	0%{transform: translateX(0rem);}
+	80%{transform: translateX(5rem);}
+	90%{transform: translateX(-.5rem);}
+	100%{transform: translateX(0rem);}
+}
+
 .squishItRight{
-	/*-webkit-animation: squishRight .5s ease-in;*/
 	-webkit-animation-name: squishRight;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-direction: normal;
 	-webkit-animation-timing-function: ease-in-out;
 	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: squishRight;
+	-moz-animation-duration: 2s;
+	-moz-animation-direction: normal;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+
+	-o-animation-name: squishRight;
+	-o-animation-duration: 2s;
+	-o-animation-direction: normal;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+
+	animation-name: squishRight;
+	animation-duration: 2s;
+	animation-direction: normal;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
 
+
+
+
+
+/*=====Squish Left Animation=====*/
 @-webkit-keyframes squishLeft{
 	0%{-webkit-transform: translateX(0rem);}
 	80%{-webkit-transform: translateX(-5rem);}
@@ -179,11 +406,49 @@ section{
 	100%{-webkit-transform: translateX(0rem);}
 }
 
+@-moz-keyframes squishLeft{
+	0%{-moz-transform: translateX(0rem);}
+	80%{-moz-transform: translateX(-5rem);}
+	90%{-moz-transform: translateX(.5rem);}
+	100%{-moz-transform: translateX(0rem);}
+}
+
+@-o-keyframes squishLeft{
+	0%{-o-transform: translateX(0rem);}
+	80%{-o-transform: translateX(-5rem);}
+	90%{-o-transform: translateX(.5rem);}
+	100%{-o-transform: translateX(0rem);}
+}
+
+@keyframes squishLeft{
+	0%{transform: translateX(0rem);}
+	80%{transform: translateX(-5rem);}
+	90%{transform: translateX(.5rem);}
+	100%{transform: translateX(0rem);}
+}
+
 .squishItLeft{
-	/*-webkit-animation: squishRight .5s ease-in;*/
 	-webkit-animation-name: squishLeft;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-direction: normal;
 	-webkit-animation-timing-function: ease-in-out;
 	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: squishLeft;
+	-moz-animation-duration: 2s;
+	-moz-animation-direction: normal;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+
+	-o-animation-name: squishLeft;
+	-o-animation-duration: 2s;
+	-o-animation-direction: normal;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+
+	animation-name: squishLeft;
+	animation-duration: 2s;
+	animation-direction: normal;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
