@@ -242,7 +242,6 @@ section{
 
 /*=====Gallop Animation=====*/
 @-webkit-keyframes gallop{
-	0%{-webkit-transfrom: translateY(0px);}
 	15%{-webkit-transform: translateY(-20px);}
 	30%{-webkit-transform: translateY(0px);}
 	45%{-webkit-transform: translateY(-20px);}
@@ -251,7 +250,6 @@ section{
 }
 
 @-moz-keyframes gallop{
-	0%{-moz-transfrom: translateY(0px);}
 	15%{-moz-transform: translateY(-20px);}
 	30%{-moz-transform: translateY(0px);}
 	45%{-moz-transform: translateY(-20px);}
@@ -260,7 +258,6 @@ section{
 }
 
 @-o-keyframes gallop{
-	0%{-o-transfrom: translateY(0px);}
 	15%{-o-transform: translateY(-20px);}
 	30%{-o-transform: translateY(0px);}
 	45%{-o-transform: translateY(-20px);}
@@ -269,7 +266,6 @@ section{
 }
 
 @keyframes gallop{
-	0%{transfrom: translateY(0px);}
 	15%{transform: translateY(-20px);}
 	30%{transform: translateY(0px);}
 	45%{transform: translateY(-20px);}
