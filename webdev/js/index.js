@@ -4,5 +4,5 @@ $(document).ready(function(){
 	});
 	$("#recurse").click(function(){
 		location.reload();
-	})
+	});
 })
