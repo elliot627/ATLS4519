@@ -1,3 +1,5 @@
+@import "css-reset.css";
+
 body{
   font-family: helvetica, sans-serif;
   background: #eee;
@@ -5,7 +7,16 @@ body{
 
 h1, h2, h3, h4, h5, h6{
   margin: 0px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
 }
+
+h1{font-size: 3.6rem;}
+
+h2{font-size: 3rem;}
+
+h4{font-size: 1.8rem;}
 
 ul{
   margin-top: 10px;
@@ -17,9 +28,14 @@ li{
   line-height: 4rem;
 }
 
+.row{
+  
+}
+
 .banner{
   padding: 10px 0px;
   color: #fff;
+  text-align: center;
   background-image: url(../img/Atlas.jpg);
   background-size: 100%;
   background-position: center top;
