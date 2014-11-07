@@ -11,59 +11,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
-        <a name="top"></a>
+    <body class="home">
+        <!-- <a name="top"></a> -->
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header>
-            <h1>Me Myself &amp; I: Web & Graphic Design Portfolio</h1>
-        </header>
+        <div id="top" class="clearfix container">
+            <header class="twocolumn left logo">
+                <h1><a href="#top" ><span class="hide-text">Me Myself &amp; I: Web &amp; Graphic Design Portfolio</span></a></h1>
+            </header>
 
-        <nav>
-            <ul>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+            <nav class="twocolumn right">
+                <ul class="clearfix right">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
 
+        <div class="clearfix container">
+            <section class="twocolumn left">
+                <h2>About Me</h2>
+                <p>Your welcome message or “about me” text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis posuere enim. Etiam ipsum odio, interdum quis lobortis eu, consequat non orci. Proin dapibus pretium augue non convallis. Aliquam sit amet nisi nec arcu bibendum imperdiet.</p>
 
-        <section>
-            <h2>About Me</h2>
-            <p>Your welcome message or “about me” text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis posuere enim. Etiam ipsum odio, interdum quis lobortis eu, consequat non orci. Proin dapibus pretium augue non convallis. Aliquam sit amet nisi nec arcu bibendum imperdiet. 
+                    <p>Duis eleifend accumsan ligula, suscipit viverra mi tempus sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam diam felis, convallis a pharetra at, tristique ac ipsum. Maecenas viverra mollis est quis venenatis. Duis tincidunt lorem id augue congue adipiscing.</p>
 
-                Duis eleifend accumsan ligula, suscipit viverra mi tempus sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam diam felis, convallis a pharetra at, tristique ac ipsum. Maecenas viverra mollis est quis venenatis. Duis tincidunt lorem id augue congue adipiscing. 
+                    <p>Nunc et urna et magna aliquam hendrerit eu sit amet arcu. Aenean tempus sapien sagittis massa gravida id cursus lacus semper. Aliquam </p>
+            </section>
 
-                Nunc et urna et magna aliquam hendrerit eu sit amet arcu. Aenean tempus sapien sagittis massa gravida id cursus lacus semper. Aliquam erat volutpat. In scelerisque, purus eu mollis laoreet, nisl elit commodo mi, non dapibus orci ipsum id dui. </p>
-        </section>
+            <section class="twocolumn right">
+                <h2>Looking for a designer&#63;</h2>
+                <p>I am available for freelance projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis posuere enim. Etiam ipsum odio, interdum quis lobortis eu, consequat non orci. Proin dapibus pretium augue non convallis. Aliquam sit amet nisi nec arcu bibendum imperdiet. Duis eleifend accumsan ligula, suscipit viverra mi tempus sed. </p>
 
-        <section>
-            <h2>Looking for a designer&#63;</h2>
-            <p>I am available for freelance projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis posuere enim. Etiam ipsum odio, interdum quis lobortis eu, consequat non orci. Proin dapibus pretium augue non convallis. Aliquam sit amet nisi nec arcu bibendum imperdiet. Duis eleifend accumsan ligula, suscipit viverra mi tempus sed. </p>
+                <figure class="clearfix left max">
+                    <img class="left" src="img/top-portfolio.png" width="100%" alt="Hire Me">
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis posuere enim. Etiam ipsum odio, interdum quis lobortis eu, consequat non orci.</p>
 
-            <figure>
-                <img src="http://placehold.it/192x150" alt="placeholder">
-            </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis posuere enim. Etiam ipsum odio, interdum quis lobortis eu, consequat non orci.</p>
-
-            <p>email: <a href="mailto:myemail@mydomain.com">mymail@mydomain.com</a></p>
-        </section>
+                <p>email: <a href="mailto:myemail@mydomain.com">mymail@mydomain.com</a></p>
+            </section>
+        </div>
 
 
         <!-- ============================= MIDDLE SECTION ============================= -->
 
 
         <section>
-        <a name="work"></a>
+        <a id="work"></a>
             <h2>My Work</h2>
             <ul>
                 <li>
@@ -118,7 +121,7 @@
 
         <!-- ============================= BOTTOM SECTION ============================= -->
   
-        <a name="services"></a>
+        <a id="services"></a>
         <section>
             <h2><i class="fa fa-pencil"></i>Services</h2>
             <h3>Web Design</h3>
@@ -142,7 +145,7 @@
             tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
 
-        <a name="contact"></a>
+        <a id="contact"></a>
         <section>
             <h2><i class="fa fa-envelope"></i>Contact</h2>
             <p>If you’re interested in getting a quote for a project or if you just have some questions, please email me with the details and I will get in touch with you as soon as possible. you can also find me on several social networking sites, my profiles are listed below.</p>
