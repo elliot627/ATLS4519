@@ -153,6 +153,13 @@ textarea {
     display: block;
    }
 
+   .navicon{
+    position: absolute;
+    top: 22px;
+    right: 35px;
+    display: none;
+   }
+
    nav a{
     font-size: 18px;
     text-transform: lowercase;
@@ -286,9 +293,71 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-}
+
+    .twocoloumn{
+      float: none;
+      width: 95%;
+    }
+
+    .navicon{
+      display: block;
+    }
+
+   nav{
+    margin-top: 0;
+    line-height: 3.1em;
+    text-align: center;
+    display: none;
+   }
+
+   nav ul{
+    padding: 0;
+   }
+
+   nav ul li{
+    width: 100%;
+    height: 50px;
+    float: none;
+   }
+
+   nav a{
+    display: block;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    border-bottom: solid 1px black;
+   }
+
+   li:first-child{
+    border-top: solid 1px black;
+   }
+
+   .top-wrapper{
+    background: none;
+   }
+
+   .logo h1{
+    width: 249px;
+    height: 65px;
+   }
+
+   .glue{
+    position: fixed;
+    background: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+   }
+
+   .internal{
+    display: block;
+    padding-top: 70px;
+   }
+
+} /* end mobile styles*/
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
