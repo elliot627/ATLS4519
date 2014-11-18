@@ -1,0 +1,21 @@
+@import url("http://fonts.googleapis.com/css?family=Ubuntu+Condensed");
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+body {
+  background: rgba(186, 218, 85, 0.5);
+  font-family: 'Ubuntu Condensed'; }
+
+nav ul:after {
+  display: table;
+  content: " ";
+  clear: both; }
+nav ul li {
+  list-style-type: none;
+  float: left;
+  margin-right: 30px; }
+  nav ul li a {
+    color: black;
+    text-decoration: none; }
+    nav ul li a:hover {
+      color: blue; }
+
+/*# sourceMappingURL=main.css.map */
