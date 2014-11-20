@@ -1,3 +1,5 @@
+*{@include box-sizing(border-box);}
+
 body{
 	// background: lighten($bg_color, 20);
 	// background: darken($bg_color, 20);
@@ -24,5 +26,11 @@ nav{
 }	//nav
 
 article{
-	@include border_radius
+	@include border_radius(30px);
+	@include box_shadow(2px 2px 2px 2px black);
+	@include my_gradient;
+}
+
+aside{
+	@include my_better_gradient(rgba(0,0,0,0), rgba(0,0,0,1));
 }
