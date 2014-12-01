@@ -96,6 +96,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   
+   .clearfix:after{
+    display: table;
+    content: " ";
+    clear: both;
+   }
+
    .left{
     float: left;
    }
@@ -104,10 +111,21 @@ textarea {
     float: right;
    }
 
+   .hide{
+    display: none;
+   }
+
    .home{
     background: #2d2413;
     color: #cfcdb4;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+   }
+
+   .home h2{
+    font-weight: bold;
+    font-size: 18px;
+    /*TODO*/
    }
 
    a{
@@ -160,6 +178,10 @@ textarea {
     display: none;
    }
 
+   nav{
+    margin-top: 35px;
+   }
+
    nav a{
     font-size: 18px;
     text-transform: lowercase;
@@ -167,7 +189,7 @@ textarea {
    }
 
    nav ul li{
-    display: inline;
+    float: left;
     margin-right: 32px;
    }
 
@@ -176,7 +198,7 @@ textarea {
    }
 
    .max{
-    max-width: ;
+    margin: 25px 25px 0 0;
    }
 
 
