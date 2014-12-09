@@ -229,15 +229,6 @@ address a{
   margin: 0 auto -5rem;
 }
 
-.twocol{
-  -moz-column-count: 2;
-  -moz-column-gap: undefinedpx;
-  -webkit-column-count: 2;
-  -webkit-column-gap: undefinedpx;
-  column-count: 2;
-  column-gap: undefinedpx;
-}
-
 .detail-content{
   padding-left: 2rem;
 }
@@ -313,4 +304,15 @@ address a{
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
 	opacity: 0;
+}
+
+@media only screen and (min-width: 960px){
+  .twocol{
+    -moz-column-count: 2;
+    -moz-column-gap: 45px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 45px;
+    column-count: 2;
+    column-gap: 45px;
+  }
 }
