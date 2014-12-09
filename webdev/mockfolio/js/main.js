@@ -8,7 +8,7 @@ var scroll_to_element = function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 700);
+        }, 800);
         return false;
       }
     }
