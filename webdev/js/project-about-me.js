@@ -19,9 +19,15 @@ $(document).ready(function(){
 
 });
 var epochToBirth = 772702259;
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 var getAge = function(){
 	var nowSec = Math.floor(Date.now()/1000);
-	$('#age').text(nowSec - epochToBirth);
+	var stringified = numberWithCommas(nowSec - epochToBirth);
+	$('#age').text(stringified);
 }
 
 window.setInterval(getAge,1000);
