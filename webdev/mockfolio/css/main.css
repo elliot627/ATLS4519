@@ -94,118 +94,211 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-   
-   .clearfix:after{
-    display: table;
-    content: " ";
-    clear: both;
-   }
+ Author's custom styles
+ ========================================================================== */
+ 
+ *,
+ *:before,
+ *:after{
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
 
-   .left{
-    float: left;
-   }
+ ul li{
+  list-style-type: none;
+ }
 
-   .right{
-    float: right;
-   }
+ ul li a{
+  text-decoration: none;
+ }
 
-   .hide{
-    display: none;
-   }
+ .home a:hover{
+  color: #ea9f3e;
+ }
 
-   .home{
-    background: #2d2413;
-    color: #cfcdb4;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-   }
+ img{
+  border: 0;
+ }
 
-   .home h2{
-    font-weight: bold;
-    font-size: 18px;
-    /*TODO*/
-   }
+ .clearfix:after{
+  display: table;
+  content: " ";
+  clear: both;
+ }
 
-   a{
-    color: #af9671;
-   }
+ .left{
+  float: left;
+ }
 
-   h2{
-    font-size: 18px;
-    color: #ea9f3e;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px rgba(0,0,0,.7);
-   }
+ .right{
+  float: right;
+ }
 
-   .container{
-    max-width: 960px;
-    margin: 0 auto;
-   }
+ .hide{
+  display: none;
+ }
 
-   .twocolumn{
-    width: 48%;
-   }
+ .home{
+  background: #2d2413;
+  color: #cfcdb4;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+ }
 
-   .logo h1{
-    width: 341px;
-    height: 89px;
-    position: relative;
-   }
+ .home h2{
+  font-weight: bold;
+  font-size: 18px;
+  color: #ea9f3e;
+  text-transform: uppercase;
+  margin: 25px 0;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+ }
 
-   .logo h1 a{
-    display: block;
-    background: url('../img/top-logo.png') center center no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-   }
+ .home h3{
+  color: #af9671;
+  font-size: 14px;
+ }
 
-   .hide-text{
-    position: absolute;
-    top: -9999em;
-    left: -9999em;
-    display: block;
-   }
+ .home a{
+  color: #af9671;
+ }
 
-   .navicon{
-    position: absolute;
-    top: 22px;
-    right: 35px;
-    display: none;
-   }
+ .home p{
+  margin-bottom: 25px;
+  line-height: 1.45em;
+ }
 
-   nav{
-    margin-top: 35px;
-   }
+ .container{
+  max-width: 960px;
+  margin: 0 auto;
+ }
 
-   nav a{
-    font-size: 18px;
-    text-transform: lowercase;
-    text-decoration: none;
-   }
+ .top-border{
+  border-top: 1px solid #594522;
+ }
 
-   nav ul li{
-    float: left;
-    margin-right: 32px;
-   }
+ .bottom-border{
+  border-bottom: 1px solid #594522;
+ }
 
-   nav ul li:last-child{
-    margin-right: 0px;
-   }
+ .top-wrapper{
+  background: url('../img/top-bg.jpg') center center no-repeat;
+  background-size: cover;
+ }
 
-   .max{
-    margin: 25px 25px 0 0;
-   }
+ .twocolumn{
+  width: 47%;
+ }
 
+ .bg-portfolio{
+  background: rgb(32,27,14);
+  padding-top: 10px;
+ }
 
+ .portfolio ul li{
+  float: left;
+  width: 290px;
+  min-height: 247px;
+  margin-right: 25px;
+ }
 
+ .portfolio ul li:nth-of-type(3n){
+  margin-right: 0;
+ }
 
+ .portfolio h3{
+  color: #af9671;
+  font-size: 14px;
+ }
 
+ .portfolio p{
+  font-size: 13px;
+ }
 
+ .portfolio ul li a img{
+  border: 1px solid #594522;
+ }
+
+ .logo h1{
+  width: 341px;
+  height: 89px;
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: block;
+ }
+
+ .logo h1 a{
+  display: block;
+  background: url('../img/top-logo.png') center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ }
+
+ .hide-text{
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+  display: block;
+ }
+
+ .navicon{
+  position: absolute;
+  top: 22px;
+  right: 35px;
+  display: none;
+ }
+
+ nav{
+  margin-top: 35px;
+ }
+
+ nav a{
+  font-size: 18px;
+  text-transform: lowercase;
+ }
+
+ nav ul li{
+  float: left;
+  margin-right: 35px;
+ }
+
+ nav ul li:last-child{
+  margin-right: 0;
+ }
+
+ .folder{
+  margin: 25px 25px 0 0;
+ }
+
+ .three-column section{
+  float: left;
+  width: 31%;
+  margin-right: 2%;
+ }
+
+ .three-column section:nth-of-type(3n){
+  margin-right: 0;
+ }
+
+ .three-column i{
+  position: relative;
+  top: 5px;
+  font-size: 34px;
+  margin: 0 10px 20px 0;
+ }
+
+ .bg-footer{
+  background: rgb(32,27,14);
+  height: 100px;
+  padding-top: 35px;
+ }
 
 
 /* ==========================================================================
@@ -315,69 +408,91 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/*tablet*/
+@media only screen and (max-width: 1000px){
+  .portfolio ul li:nth-of-type(3n){
+    margin-right: 25px;
+  }
+}
 
-    .twocoloumn{
-      float: none;
-      width: 95%;
-    }
 
-    .navicon{
-      display: block;
-    }
+@media only screen and (max-width: 652px) {
 
-   nav{
+  .right{
+    width: 100%;
+  }
+
+  .twocolumn{
+    float: none;
+    width: 95%;
+  }
+
+  .three-column section{
+    clear: both;
+    width: 100%;
+  }
+
+  .container{
+    max-width: 652px;
+    padding: 0 10px;
+  }
+
+  .top-wrapper{
+    background: url('');
+  }
+
+  .logo h1{
+    width: 268px;
+    height: 70px;
+    float: none;
+  }
+
+  .navicon{
+    display: block;
+  }
+
+  nav{
     margin-top: 0;
     line-height: 3.1em;
     text-align: center;
     display: none;
-   }
+  }
 
-   nav ul{
+  nav ul{
     padding: 0;
-   }
+  }
 
-   nav ul li{
+  nav ul li{
     width: 100%;
     height: 50px;
     float: none;
-   }
+  }
 
-   nav a{
+  nav a{
     display: block;
     height: 100%;
     padding: 0;
     border: 0;
     border-bottom: solid 1px black;
-   }
+  }
 
-   li:first-child{
+  li:first-child a{
     border-top: solid 1px black;
-   }
+  }
 
-   .top-wrapper{
-    background: none;
-   }
-
-   .logo h1{
-    width: 249px;
-    height: 65px;
-   }
-
-   .glue{
+  .glue{
     position: fixed;
-    background: white;
+    background: #362914;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
-   }
+  }
 
-   .internal{
+  .internal{
     display: block;
     padding-top: 70px;
-   }
+  }
 
 } /* end mobile styles*/
 
