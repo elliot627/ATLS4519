@@ -413,6 +413,11 @@ textarea {
   .portfolio ul li:nth-of-type(3n){
     margin-right: 25px;
   }
+
+  .portfolio h2{
+    text-align: center;
+  }
+
 }
 
 
@@ -492,6 +497,10 @@ textarea {
   .internal{
     display: block;
     padding-top: 70px;
+  }
+
+  .portfolio ul li, .portfolio ul li a img{
+    width: 50%;
   }
 
 } /* end mobile styles*/
