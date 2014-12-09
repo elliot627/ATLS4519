@@ -52,13 +52,13 @@ p{
 	right: 15px;
 }
 
-.navicon a:hover, .navicon a:visited, .navicon a:focus, .navicon a:active{
+.navicon a, .navicon a:hover, .navicon a:visited, .navicon a:focus, .navicon a:active{
 	color: #fff;
 	text-decoration: none;
 }
 
 /*===Mobile Styles===*/
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 670px){
 	nav{
 		text-align: center;
 		line-height: 4rem;
@@ -92,7 +92,9 @@ p{
 
 /*===Desktop Style Reset===*/
 /*===This forces the nav to toggle on when viewed in desktop===*/
-@media only screen and (min-width: 481px){
-	nav{display: block !important;}
+@media only screen and (min-width: 670px){
+	nav{
+		display: block !important;
+	}
 }
 /*===End Desktop Style Reset===*/
