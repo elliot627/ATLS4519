@@ -83,8 +83,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
+Browse Happy prompt
+========================================================================== */
 
 .browsehappy {
     margin: 0.2em 0;
@@ -94,15 +94,107 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
-   nav a{
-    color: #fff;
-   }
+/*Global Styles*/
+
+/*CSS Reset*/
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  /*Makes all font ems multiples of 10*/
+  font-size: 62.5%;
+}
+
+img{border: 0;}
+ul li {list-style-type: none;}
+
+.left{float:left;}
+.right{float:right;}
+.clearfix:after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+/*end CSS Reset*/
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background: url('../img/home.jpg') top center no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+/*End Global Styles*/
 
 
+/*Main Header Styles*/
+.home{
+    height: 93%;
 
+}
+
+header{
+    height: 7%;
+    width: 100%;
+    background: #fff;
+}
+
+nav{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar-nav{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Styles for active nav tab*/
+.active{
+    background: #ddd;
+    color: #888;
+}
+
+nav li{
+    display: inline-block;
+    height: 100%;
+    width: 24%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav li:hover{
+    background: #ddd;
+    color: #888;
+}
+
+nav a{ 
+    color: #333;
+    padding-top: 20px;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+nav a:hover{
+
+}
 
 
 
