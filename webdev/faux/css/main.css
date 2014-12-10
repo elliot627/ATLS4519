@@ -172,9 +172,9 @@ nav{
 }
 
 nav li{
-    display: inline-block;
+    float: left;
     height: 100%;
-    width: 24%;
+    width: 25%;
     text-align: center;
     font-size: 2rem;
 }
@@ -184,10 +184,11 @@ nav li:hover{
     color: #888;
 }
 
-nav a{ 
+nav a, nav a:focus, nav a:active, nav a:visited{
     color: #333;
     padding-top: 20px;
     text-decoration: none;
+    outline: none;
     display: block;
     height: 100%;
 }
