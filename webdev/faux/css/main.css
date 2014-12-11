@@ -142,7 +142,7 @@ body{
     width: 100%;
 }
 
-*::selection{
+::selection{
     background: #DC3522;
 }
 
@@ -181,8 +181,8 @@ body{
 }
 
 header{
-    height: 7%;
-    min-height:50px;
+    height: 50px;
+    min-height: 50px;
     width: 100%;
     background: #ddd;
     -webkit-box-shadow: 0 .5px 30px 0 #000;
@@ -208,9 +208,9 @@ nav{
 nav li{
     float: left;
     height: 100%;
-    width: 10%;
+    width: 120px;
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-family: 'raleway';
 }
 
@@ -221,7 +221,7 @@ nav li a:hover{
 
 nav a, nav a:focus, nav a:active, nav a:visited{
     color: #555;
-    padding-top: 15px;
+    padding-top: 10px;
     text-decoration: none;
     outline: none;
     display: block;
@@ -234,6 +234,8 @@ nav a, nav a:focus, nav a:active, nav a:visited{
 }
 
 .elevator a i{
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
     transform: translateY(3px;);
     display: block;
     width: 100%;
@@ -241,14 +243,37 @@ nav a, nav a:focus, nav a:active, nav a:visited{
 }
 
 .elevator a i:hover{
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
     transform: translateY(-3px);
 }
 /*End Header / Nav Styles*/
 
 
-/*Services Styles*/
+/*About Styles*/
+.fact-box{
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+}
 
-/*End Services Styles*/
+.fact{
+    display: inline-block;
+    width: 33%;
+}
+
+.fact:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.fact i{
+    font-size: 22rem;
+}
+
+.fact-title{
+    font-size: 3rem;
+}
+/*End About Styles*/
 
 
 
