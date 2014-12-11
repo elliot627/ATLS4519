@@ -283,7 +283,7 @@ nav a, nav a:focus, nav a:active, nav a:visited{
     height: 100%;
     width: 100%;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 130px;
 }
 
 .fact{
@@ -296,11 +296,13 @@ nav a, nav a:focus, nav a:active, nav a:visited{
 }
 
 .fact-title{
+    font-family: 'raleway';
     padding-top:10px;
     font-size: 3rem;
 }
 
 .fact-sub{
+    font-family: 'raleway';
     font-size: 2rem;
 }
 
@@ -384,9 +386,32 @@ nav a, nav a:focus, nav a:active, nav a:visited{
     -o-animation: fadeLeft .5s ease-in .5s;
     animation: fadeLeft .5s ease-in .5s;
 }
-
 /*End About Styles*/
 
+
+/*Contact Styles*/
+.form-wrap{
+    width: 40%;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.contact .name{
+    width: 250px;
+    height: 25px;
+    font-size: 1.2rem;
+    background: rbga(255,255,255,.5);
+}
+
+p.sub{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'raleway';
+    color: #ccc;
+    font-size: 2rem;
+}
+/*End contact Styles*/
 
 
 
