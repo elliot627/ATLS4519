@@ -37,5 +37,5 @@ $(document).ready(function(){
 		else{
 			alert("Whoops, looks like you forgot some stuff..");
 		}
-	})
+	});
 });
