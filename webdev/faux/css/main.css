@@ -291,12 +291,12 @@ nav a, nav a:focus, nav a:active, nav a:visited{
     /*height: 100%;*/
     width: 100%;
     text-align: center;
-    padding-top: 130px;
 }
 
 .fact{
     display: inline-block;
     width: 24%;
+    margin-top: 70px;
 }
 
 .fact i{
@@ -413,27 +413,6 @@ nav a, nav a:focus, nav a:active, nav a:visited{
 :-ms-input-placeholder {  
    color: rgba(200,200,200,.3);
 }
-
-/*.contact{
-    width: 80%;
-    margin: 0 auto;
-}
-
-.info-wrap{
-    width: 100%;
-    height: 100%;
-}
-
-.info{
-    width: 49%;
-    display: inline;
-}
-
-.field{
-    color: #eee;
-    font-family: 'raleway';
-    font-size: 2.5rem;
-}*/
 
 .contact{
     width: 80%;
