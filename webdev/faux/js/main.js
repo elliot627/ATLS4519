@@ -31,6 +31,11 @@ $(document).ready(function(){
 		$('#phone').val("");
 		$('#device').val("");
 		$('#repair').val("");
-		alert("Thanks " + name +"! We'll get back to you in no time. \n\n\n Have an awesome day!")
+		if(name){
+			alert("Thanks " + name +"! We'll get back to you in no time. \n\n\n Have an awesome day!")
+		}
+		else{
+			alert("Whoops, looks like you forgot some stuff..");
+		}
 	})
 });
