@@ -137,7 +137,7 @@ html, body{
 }
 
 body{
-    background: url('../img/home.jpg') center center no-repeat fixed;
+    background: url('../img/homesmall.jpg') center center no-repeat fixed;
     background-size: cover;
     width: 100%;
 }
