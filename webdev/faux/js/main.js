@@ -26,12 +26,24 @@ $(document).ready(function(){
 		name = name.toLowerCase();
 		name = name.charAt(0).toUpperCase() + name.slice(1);
 		$('#first').val("");
+
+		var last = $('#last').val();
 		$('#last').val("");
+
+		var email = $('#email').val();
 		$('#email').val("");
+
+
+		var phone = $('#phone').val();
 		$('#phone').val("");
+		
+		var device = $('#device').val();
 		$('#device').val("");
+		
+		var repair = $('#repair').val();
 		$('#repair').val("");
-		if(name){
+		
+		if(first && last && email && phone && device && repair){
 			alert("Thanks " + name +"! We'll get back to you in no time. \n\n\n Have an awesome day!")
 		}
 		else{
