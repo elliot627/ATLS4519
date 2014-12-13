@@ -123,6 +123,10 @@ textarea {
   border: 0;
  }
 
+ a{
+  outline: none !important;
+ }
+
  .clearfix:after{
   display: table;
   content: " ";
@@ -187,6 +191,7 @@ textarea {
  .top-wrapper{
   background: url('../img/top-bg.jpg') center center no-repeat;
   background-size: cover;
+  padding: 0 10px;
  }
 
  .twocolumn{
@@ -284,7 +289,7 @@ textarea {
  }
 
  .three-column section:nth-of-type(3n){
-  margin-right: 0;
+  /*margin-right: 0;*/
  }
 
  .three-column i{
@@ -409,16 +414,32 @@ textarea {
    ========================================================================== */
 
 /*tablet*/
-@media only screen and (max-width: 1000px){
-  .portfolio ul li:nth-of-type(3n){
-    margin-right: 25px;
+@media only screen and (max-width: 1000px) and (min-width: 653px){
+  .portfolio ul li{
+    margin: 0;
+  }
+
+  .portfolio ul li:nth-of-type(2n+1){
+    margin-right: 15px;
+  }
+
+  .portfolio ul li:nth-of-type(2n){
+    margin-left: 15px;
   }
 
   .portfolio h2{
     text-align: center;
   }
 
+  ul{
+    max-width: 630px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
 }
+
+
 
 
 @media only screen and (max-width: 652px) {
@@ -485,6 +506,10 @@ textarea {
     border-top: solid 1px black;
   }
 
+  ul{
+    padding: 0;
+  }
+
   .glue{
     position: fixed;
     background: #362914;
@@ -499,8 +524,10 @@ textarea {
     padding-top: 70px;
   }
 
-  .portfolio ul li, .portfolio ul li a img{
-    width: 50%;
+  .portfolio ul li, .portfolio ul li a, .portfolio ul li a img{
+    width: 100%;
+    display: block;
+    margin: 0;
   }
 
 } /* end mobile styles*/
