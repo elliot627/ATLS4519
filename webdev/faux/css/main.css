@@ -611,7 +611,10 @@ p.sub{
 
 /*Small Desktop Styles*/
 @media only screen and (max-width: 1199px) {
-
+    .fact{
+        width: 45%;
+        display: inline-block;
+    }
 }
 /*End Small Desktop Styles*/
 
@@ -625,6 +628,7 @@ p.sub{
         width: 25%;
         display: inline-block;
     }
+
 }
 
 @media print,
