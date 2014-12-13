@@ -60,7 +60,10 @@ li:hover{
 
   h2{
     font-weight: bold;
+  }
 
+  h4{
+    font-weight: 2.5rem;
   }
 
   .list-group-item{
@@ -70,5 +73,6 @@ li:hover{
 
   .list-group-item a{
     padding-top: 15px;
+    font-size: 1.9rem;
   }
 }
