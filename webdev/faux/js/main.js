@@ -20,4 +20,17 @@ $(document).ready(function(){
 	});
 
 	wow.init();
+
+	$('#submit').click(function(){
+		var name = $('#first').val();
+		name = name.toLowerCase();
+		name = name.charAt(0).toUpperCase() + name.slice(1);
+		$('#first').val("");
+		$('#last').val("");
+		$('#email').val("");
+		$('#phone').val("");
+		$('#device').val("");
+		$('#repair').val("");
+		alert("Thanks " + name +"! We'll get back to you in no time. \n\n\n Have an awesome day!")
+	})
 });
