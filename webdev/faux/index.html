@@ -63,7 +63,7 @@
             <div class="fact wow fade-left">
                 <i class="fa fa-usd"></i><br>
                 <h2 class="fact-title">We're Cheap!</h2>
-                <h3 class="fact-sub">Low Overhead Costs = More Savings</h3>
+                <h3 class="fact-sub">Low Overhead Costs => More Savings</h3>
             </div>
         </div>
     </section>
@@ -72,29 +72,36 @@
         <h2 class="section-title" style="color:#D9CB9E">Pricing</h2>
     </section>
 
-    <section style="height:700px; background:#374140" id="reviews" class="">
+    <section style="height:700px; background:#374140" id="reviews" class="scrollto">
         <h2 class="section-title" style="color:#DC3522">Reviews</h2>
     </section>
 
-    <section style="height:700px; background:#121212" id="contact" class="scrollto">
+    <section style="height:700px; width: 100%; background:#121212" id="contact" class="scrollto">
         <h2 class="section-title" style="color: #374140">Get in Touch!</h2>
         <p class="sub">Tired of dealing with a broken phone? Let us know!</p>
-        <div class="form-wrap">
-            <form>
-                <h3 class="question">Name</h3>
-                <div class="name-box">
-                    <input class="first form" type="text" id="first" placeholder="first" />
-                    <input class="last form" type="text" id="last" placeholder="last" />
+        <form>
+            <div class="contact">
+                <div class="info left">
+                    <h3 class="question">Name</h3>
+                    <input class="form" type="text" id="first" placeholder="FIRST" />
+                    <input class="form" type="text" id="last" placeholder="LAST" />
+                    <h3 class="question">Email</h3>
+                    <input class="form full" type="text" id="email" />
+                    <h3 class="question">Phone</h3>
+                    <input class="form full" type="text" id="phone" />
                 </div>
+                <div class="info right">
+                    <h3 class="question">What'd you break?</h3>
+                    <input class="full form no-upper" type="text" id="form" placeholder="iPhone 6? HTC One? ...">
 
-                <h3 class="question" style="padding-top: 75px;">Which phone do you need repaired?</h3>
-                <input class="phone form" type="text" id="form" placeholder="phone model">
-
-                <h3 class="question" style="padding-top:45px;">What's wrong with it?</h3>
-                <input class="repair form" type="text" id="repair" placeholder="Broken screen? Water Damage?" />
-
-            </form>
-        </div>
+                    <h3 class="question">How's it broken?</h3>
+                    <input class="full form no-upper" type="text" id="repair" placeholder=" Shattered screen? Water damage? ..." />
+                    <div class="submit" id="submit">
+                        <a href="#"><h3>Send</h3></a>
+                    </div>
+                </div>
+            </div>
+        </form>
     </section>
 
 

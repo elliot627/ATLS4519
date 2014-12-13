@@ -76,7 +76,7 @@ fieldset {
 
 /*
  * Allow only vertical resizing of textareas.
- */
+ F*/
 
 textarea {
     resize: vertical;
@@ -140,6 +140,14 @@ body{
     background: url('../img/home.jpg') center center no-repeat fixed;
     background-size: cover;
     width: 100%;
+}
+
+section{
+    overflow: hidden;
+}
+
+a{
+    outline: none !important;
 }
 
 ::selection{
@@ -280,7 +288,7 @@ nav a, nav a:focus, nav a:active, nav a:visited{
 }
 
 .fact-box{
-    height: 100%;
+    /*height: 100%;*/
     width: 100%;
     text-align: center;
     padding-top: 130px;
@@ -390,11 +398,6 @@ nav a, nav a:focus, nav a:active, nav a:visited{
 
 
 /*Contact Styles*/
-.form-wrap{
-    width: 40%;
-    margin: 50px auto;
-}
-
 ::-webkit-input-placeholder {
    color: rgba(200,200,200,.3);
 }
@@ -411,57 +414,102 @@ nav a, nav a:focus, nav a:active, nav a:visited{
    color: rgba(200,200,200,.3);
 }
 
+/*.contact{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-wrap{
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    width: 49%;
+    display: inline;
+}
+
+.field{
+    color: #eee;
+    font-family: 'raleway';
+    font-size: 2.5rem;
+}*/
+
+.contact{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info{
+    width: 45%;
+}
+
 .question{
     text-align: center;
+    margin-top: 50px;
     color: #eee;
     display: block;
     font-size: 3.5rem;
     font-family: 'raleway';
 }
 
+.question:nth-of-type(1){
+    margin-top: 0;
+}
+
 .form{
     -webkit-border-radius: 2px 2px 0 0;
     border-radius: 2px 2px 0 0;
+    width: 50%;
+    float: left;
     font-family: 'raleway';
-    width: 300px;
-    height: 50px;
     color: #ddd;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     background: none;
     border: none;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    padding-top: 5px;
     border-bottom: 3px solid #eee;
+}
+
+.no-upper{
+    text-transform: none;   
 }
 
 .form:focus{
     outline-color: #fff;
-    /*-webkit-box-shadow: inset 0px 1px 5px 1px rgba(255,255,255,1);
-    -moz-box-shadow: inset 0px 1px 5px 1px rgba(255,255,255,1);
-    box-shadow: inset 0px 1px 5px 1px rgba(255,255,255,1);*/
 }
 
-.name-box{
+.full{
     width: 100%;
-    display: block;
 }
 
-.first{
-    width: 49%;
-}
-
-.last{
-    width: 49%;
-    float: right;
-}
-
-.phone{
+.submit{
     width: 100%;
-    font-size: 3rem;
+    padding-top: 50px;
+    display: inline-block;
 }
 
-.repair{
+.submit a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.submit a h3{
+    height: 100%;
     width: 100%;
-    font-size: 2.7rem;
+    text-align: center;
+    background: #eee;
+    color: #121212;
+    font-size: 4rem;
+    font-family: 'raleway';
+}
+
+.submit a h3:active{
+    background: #121212;
+    color: #eee;
 }
 
 p.sub{
@@ -470,7 +518,7 @@ p.sub{
     text-align: center;
     font-family: 'raleway';
     color: #ccc;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 /*End contact Styles*/
 
