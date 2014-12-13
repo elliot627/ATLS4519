@@ -310,7 +310,7 @@ nav a, nav a:focus, nav a:active, nav a:visited{
 
 .fact-sub{
     font-family: 'raleway';
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 @-webkit-keyframes fadeRight{
@@ -615,8 +615,29 @@ p.sub{
         width: 45%;
         display: inline-block;
     }
+
+    .question{
+        font-size: 2.5rem;
+    }
+
+    .form{
+        font-size: 1.8rem;
+    }
 }
 /*End Small Desktop Styles*/
+
+/*Tablet Styles*/
+@media only screen and (max-width: 992px){
+    .info{
+        width: 100%;
+        margin-top: none;
+    }
+
+    .question:nth-of-type(1){
+        margin-top: 30px;
+    }
+}
+/*End Tablet Styles*/
 
 /*Mobile Styles*/
 @media only screen and (max-width: 768px){
