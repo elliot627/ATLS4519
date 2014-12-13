@@ -5,8 +5,8 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
-	$('#title').fitText(1);
-	$('#subtitle').fitText(3);
+	$('#title').fitText(.81);
+	$('#subtitle').fitText(1.85);
 
 
 	smoothScroll.init({
