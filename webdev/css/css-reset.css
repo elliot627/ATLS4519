@@ -10,7 +10,7 @@
 }
 
 html{
-  /*Makes all font ems multiples of 10*/
+  /*Makes all font rems multiples of 10*/
   font-size: 62.5%;
 }
 
